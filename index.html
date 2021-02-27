@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section class="wrap">
+        <form class="feedback-form" action="https://digital-spectr.com/ac/academy.php" method="POST">
+            <p class="feedback-form__text">Задать вопрос</p>
+            <input class="feedback-form__input" type="text" name="name" pattern="^[А-Яа-яЁё\s-]+$"
+                placeholder="Фамилия Имя Отчество *" required>
+            <input class="feedback-form__input" type="tel" name="phone" pattern="^[ 0-9+\s-]+$" placeholder="Телефон *"
+                required>
+            <input class=" feedback-form__input" type="email" name="email" placeholder="Email">
+            <button class="feedback-form__button">
+                ОТПРАВИТЬ ЗАПРОС
+            </button>
+        </form>
+    </section>
+
+</body>
+
+</html>
